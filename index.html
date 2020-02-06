@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio | Aleksa Stošić</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/style.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/responsive.min.css"/>
+        <meta name="autor" content="Aleksa Stošić"/>
+        <meta name="description" content="Portfolio web developer, website creation ..." />
+        <meta name="keywords" content=" design , site , web , portfilio, Aleksa Stošić" />
+    </head>
+    <body>
+        <header>
+            <div id="preko">
+                <div id="topheder">
+                    <div>
+                        <img src="img/whitelogo.png" alt="logo portfilio"/>
+                    </div>
+                    <div class="topnav" id="myTopnav">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i></a>
+                        <a href="#Omeni">About ME</a>
+                        <a href="#projekti">Projects</a>
+                        <a href="#vestine">Skills</a>
+                        <a href="#kontakt">Contact</a>
+                    </div>
+                </div>
+                <div id="naslov"   data-aos="flip-down" class="aos-init" data-aos-duration="1000">
+                    <h1>Hi! I'm Aleksa Stošić</h1>
+                    <h2>I'm a web developer and this is my portfolio.</h2>
+                </div>
+            </div>
+        </header>
+        <div id="Omeni">
+            <div id="zatamljivac">
+                <h1>ABOUT ME</h1>
+                <div class="okvir">
+                    <div id="portret" data-aos="fade-right">
+                        <img src="img/portret1.png" alt="portret"/>
+                    </div>
+                    <div id="tekst" data-aos="fade-left">
+                        <p>I was born in Leskovac on July 30, 1999.</p>
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Technical school "Vožd Karađorđe" in Lebane;</li>
+                            <li>I am currently studying at a high ICT school, direction: internet technology.</li>
+                        </ul>
+                        <h2>Experience</h2>
+                        <p>I don't currently have a lot of experience in working with web development and designing sites, but I am ambitious and I hope to be an expert in my business.
+                        I am dedicated to work, it's not hard for me to do what I love, and it does not matter what we do, it's important to enjoy it and if we can live on it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projekti">
+            <div id="prekoprojekta">
+                <h1 data-aos="fade-down-right">PROJECTS</h1>
+                <div class="okvir">
+                    <div class="projekt">
+                        <img src="img/projekat.png" alt="My first sit" />
+                        <div id="opisSl"><p><a href="https://grad-lebane.000webhostapp.com/index.html" target="_blank">My first sit</a>, used knowledge: HTML5, CSS3.</p></div>
+                    </div>
+                    <div class="projekt">
+                        <img src="img/projekat2.png" alt="portfolio" />
+                        <div id="opisSl"><p>Portfolio, used knowledge: HTML5, CSS3, responsive design,SASS.</p> </div>
+                    </div>
+                    <div class="projekt">
+                        <img src="img/sorry.png" alt="Next project" />  
+                        <div id="opisSl"><p>To be continued...</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+        <div id="vestine">
+                <h1 data-aos="flip-right">SKILLS</h1>
+                <div class="okvir"  data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                    <div class="praktznanje">
+                    <div class="skills html">HTML 80%</div>
+                    </div>
+                    <div class="praktznanje">
+                    <div class="skills css">CSS 70%</div>
+                    </div>
+                    <div class="praktznanje">
+                    <div class="skills sass"> SASS 76%</div>
+                    </div>
+                    <div class="praktznanje">
+                    <div class="skills responsive">Responsive design 70%</div>
+                    </div>
+                    <div class="praktznanje">
+                    <div class="skills sql">SQL 78%</div>
+                    </div>
+                    <div class="praktznanje">
+                    <div class="skills c">C 30%</div>
+                    </div>      
+                </div>
+            </div>
+        <footer>
+            <h1 data-aos="zoom-in-right">CONTACT</h1>
+            <div class="okvir">
+                <div id="kontakt">
+                    <p>If you would like to contact me for successful cooperation and business, write me a mail: aki.sto99@gmail.com.</p>
+                </div>
+                <div id="forma">
+                    <div class="column">
+                        <form action="#" method="post">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="australia">Serbia</option>
+                                <option value="canada">Montenegro</option>
+                                <option value="usa">USA</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div id="drustvene">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Aki.sto99" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="http://www.google.com" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="http://www.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="css/style.scss" target="_blank"><i class="fab fa-sass"></i></a></li>
+                        <li><a href="css/style.css" target="_blank"><i class="fab fa-css3"></i></a></li>
+                        <li><a href="css/responsive.css" target="_blank"><i class="fas fa-tablet-alt"></i></a></li>
+                        <li><a href="https://portfolio-aleksa-stosic.000webhostapp.com/sitemap.xml" target="_blank"><i class="fas fa-sitemap"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="futer okvir">
+                <p>Copyright &copy; 2019,site was designed and realized by Aleksa Stošić. </p>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

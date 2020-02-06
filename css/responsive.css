@@ -1,0 +1,161 @@
+@media screen and (max-width:992px){
+    #naslov h1{
+      font-size:40px;
+    }
+    #naslov h2{
+      font-size:20px;
+    }
+    body h1{
+      font-size:27px;
+    }
+    body h2{
+      font-size: 19px;
+    }
+    .projekt{
+      width: 49% !important;
+    }
+}
+@media screen and (max-width:1068px){
+  footer .okvir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+  }
+  #kontakt{
+    width: 40% !important;
+  }
+  #forma{
+    width:59% !important;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+  }
+  #drustvene{
+    width:100% !important;
+  }
+  #drustvene ul {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    width: 100%;
+  }
+}
+@media screen and (max-width:934px){
+ /*#kontakt p{
+    text-align: left;
+  }*/
+  footer .okvir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+  }
+  #kontakt{
+    width: 100% !important;
+  }
+  #forma{
+    width:100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  input[type=text], select, textarea {
+    width: 100% !important;
+  }
+  #drustvene{
+    width:100% !important;
+  }
+  #drustvene ul {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    width: 100%;
+  }
+}
+@media screen and (max-width:768px){
+    #topheder{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #topheder div{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    #Omeni .okvir{
+      display: flex;
+     /*flex-direction: column;*/
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content:center;
+    }
+    #tekst{
+      width: 100% !important;
+    }
+    #portret{
+      margin:0px 0px 25px 20px;
+    }
+    .projekt{
+      width: 75% !important;
+    }
+    /*footer .okvir{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center ;
+    }
+    #kontakt{
+      width: 100% !important;
+    }
+    #forma{
+      width:100% !important;
+      display: flex;
+      justify-content: center;
+    }
+    input[type=text], select, textarea {
+      width: 100% !important;
+    }
+    #drustvene{
+      width:100% !important;
+    }
+    #drustvene ul {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-around !important;
+      width: 100%;
+    }*/
+}
+@media screen and (max-width: 480px) {
+    #topheder{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #topheder div{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .topnav a:not(:first-child){
+        display: none !important;
+    }
+    .topnav a.icon {
+      display: flex;
+    }
+    .projekt{
+      width: 90% !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .topnav.responsive {
+        display: flex;
+        flex-direction: column;
+        }
+    .topnav.responsive a {
+      display: flex !important;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  

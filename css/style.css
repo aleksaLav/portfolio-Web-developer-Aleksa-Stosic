@@ -1,0 +1,439 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: padding-box;
+          box-sizing: padding-box;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+body p {
+  text-indent: 50px;
+}
+
+body a, body p {
+  text-align: justify;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body h2 {
+  margin: 15px 0px 15px 0px;
+}
+
+.okvir {
+  width: 90%;
+  margin: 0px auto;
+}
+
+header {
+  height: 650px;
+  background: url("../img/headerimg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header #topheder {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  z-index: 2;
+}
+
+header #preko {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 650px;
+  position: absolute;
+}
+
+header #naslov {
+  widows: 100%;
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: #e4d5d5;
+}
+
+header #naslov h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+header #naslov h2 {
+  font-size: 30px;
+}
+
+header .topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .topnav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 14px 16px;
+  color: white;
+}
+
+header .topnav .icon {
+  display: none;
+}
+
+#Omeni {
+  width: 100%;
+  background: url("../img/skills.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#Omeni ul {
+  list-style-type: square;
+}
+
+#Omeni .okvir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Omeni h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+}
+
+#Omeni #portret {
+  width: 300px;
+  height: 338px;
+  border: 2px solid;
+}
+
+#Omeni #tekst {
+  width: 50%;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+#Omeni #zatamljivac {
+  background-color: rgba(236, 54, 66, 0.8);
+  width: 100%;
+  height: 100%;
+  padding-bottom: 13%;
+}
+
+#projekti {
+  width: 100%;
+  background: url("../img/projekti.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#projekti #prekoprojekta {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#projekti h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 4% 0px  0px;
+  color: white;
+}
+
+#projekti .okvir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+#projekti .projekt {
+  /* width:350px;
+        height:250px;*/
+  width: 32%;
+  /*  border:1px solid #000;*/
+  /*  background-color: #ddd;*/
+  margin-bottom: 5%;
+}
+
+#projekti .projekt img {
+  width: 100%;
+  border: 2px solid white;
+}
+
+#projekti .projekt #opisSl {
+  margin-top: 15px;
+  color: white;
+}
+
+#projekti .projekt #opisSl p {
+  text-indent: 0px;
+}
+
+#projekti .projekt #opisSl a {
+  color: white;
+}
+
+#projekti .projekt #opisSl a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#vestine {
+  background: #e3cbaa;
+  width: 100%;
+}
+
+#vestine .okvir {
+  padding-bottom: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#vestine h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 4% 0px  0px;
+}
+
+#vestine .praktznanje {
+  width: 80%;
+  background-color: rgba(177, 169, 169, 0.719);
+  margin-bottom: 15px;
+}
+
+#vestine .skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+#vestine .html {
+  width: 80%;
+  background-color: #4CAF50;
+}
+
+#vestine .css {
+  width: 70%;
+  background-color: #9e4911;
+}
+
+#vestine .sass {
+  width: 76%;
+  background-color: #5c43b4;
+}
+
+#vestine .responsive {
+  width: 70%;
+  background-color: rgba(236, 54, 66, 0.8);
+}
+
+#vestine .sql {
+  width: 78%;
+  background-color: #446b46;
+}
+
+#vestine .c {
+  width: 30%;
+  background-color: #f44336;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(10, 7, 7, 0.733);
+  color: white;
+  /* Style inputs */
+  /* Create two columns that float next to eachother */
+  /* Clear floats after the columns */
+}
+
+footer p {
+  text-indent: 0px;
+}
+
+footer .okvir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 4% 0px  0px;
+}
+
+footer #kontakt {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*align-items: center;*/
+}
+
+footer #kontakt p {
+  margin-top: 20px;
+  width: 70%;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer #forma {
+  width: 45%;
+}
+
+footer #drustvene {
+  width: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+footer #drustvene ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer #drustvene ul li {
+  margin-bottom: 15px;
+}
+
+footer #drustvene ul li a {
+  color: white;
+}
+
+footer .futer p {
+  margin-bottom: 5px;
+}
+
+footer input[type=text], footer select, footer textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+footer input[type=submit] {
+  background-color: rgba(236, 54, 66, 0.8);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+footer .column {
+  /* float: left;*/
+  width: 65%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+footer .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*# sourceMappingURL=style.css.map */

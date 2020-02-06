@@ -1,0 +1,283 @@
+@mixin naslov{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+$redcolor:rgba(236,54,66,0.8);
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:padding-box;
+    word-wrap:break-word;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Merriweather', serif;
+    p{text-indent:50px;}
+    a , p{
+        text-align:justify;
+    }
+    a{
+        text-decoration:none;
+    }
+    ul{
+        list-style-type:none;
+    }
+    h2{
+        margin: 15px 0px 15px 0px;
+    }
+}
+.okvir{
+    width:90%;
+    margin:0px auto;
+}
+header{
+    height:650px;
+    background:url("../img/headerimg.png") no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    #topheder{
+        background-color: rgba(0,0,0, 0.75);
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position:fixed;
+        z-index: 2; 
+    }
+    #preko{
+        background-color: rgba(0,0,0, 0.3);
+        width: 100%;
+        height:650px;
+        position: absolute;
+    }     
+    #naslov{
+        widows: 100%;
+        position: relative;
+        top:40%;
+        text-align: center;
+        color:rgb(228, 213, 213);
+        h1{
+            margin-bottom: 30px;
+            font-size: 50px;
+        }
+        h2{
+            font-size:30px;
+        }
+    }
+    .topnav{
+        display: flex;
+        align-items:center;
+        justify-content: flex-end;
+        a {
+            display: flex;
+          justify-content: flex-start;
+          padding: 14px 16px;
+          color:white;
+        }  
+        .icon {
+          display: none;
+        } 
+    }
+}
+#Omeni{
+    width:100%;
+    background: url("../img/skills.jpg") no-repeat;
+    background-size:cover;
+    color:white;
+    ul{
+        list-style-type:square; 
+    }
+    .okvir{
+        display:flex;
+        justify-content:space-around;
+    }
+    h1{
+        @include naslov;
+        margin-bottom:5%;
+        padding-top:5%;
+    }
+    #portret{
+        width:300px;
+        height:338px;
+        border:2px solid;
+    }
+    #tekst{
+        width:50%;
+        font-size:20px;
+        margin-left:15px;
+    }
+    #zatamljivac{
+        background-color:$redcolor;
+        width: 100%;
+        height:100%;
+        padding-bottom: 13%;
+    }
+}
+#projekti {
+    width:100%;
+    background: url("../img/projekti.png") no-repeat;
+    background-size:cover;
+    background-position: center;
+    #prekoprojekta{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height:100%;
+    }
+    h1{
+        @include naslov;
+        margin-bottom:3%;
+        padding:4% 0px  0px;
+        color:white;
+    }
+    .okvir{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content:space-around;
+    }
+    .projekt{
+       /* width:350px;
+        height:250px;*/
+        width:32%;                                      
+      /*  border:1px solid #000;*/
+      /*  background-color: #ddd;*/
+        margin-bottom: 5% ;
+        img{
+            width: 100%;
+            border:2px solid white;
+        }
+        #opisSl{
+            margin-top:15px;
+            color:white;
+            p{text-indent:0px;}
+            a{color:white;
+                &:hover{
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+#vestine{
+    background: rgb(227,203,170);
+    width: 100%;
+    .okvir{
+        padding-bottom: 6%;
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+    }
+    h1{
+        @include naslov;
+        margin-bottom:3%;
+        padding:4% 0px  0px;
+    }
+    .praktznanje {
+        width: 80%;
+        background-color: rgba(177, 169, 169, 0.719);
+        margin-bottom: 15px;
+      }
+      .skills {
+        text-align: right;
+        padding: 10px;
+        color: white;
+      }
+      .html {width: 80%; background-color: #4CAF50;}
+      .css {width: 70%; background-color:#9e4911;}
+      .sass {width: 76%; background-color: rgb(92, 67, 180);}
+      .responsive {width: 70%; background-color: $redcolor;}
+      .sql{width: 78%; background-color: #446b46;}
+      .c{width: 30%; background-color: #f44336;}
+}
+footer{
+    width: 100%;
+    background-color: rgba(10, 7, 7, 0.733);
+    color:white;
+    p{text-indent:0px;}
+    .okvir{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around ;
+    }
+    h1{
+        @include naslov;
+        margin-bottom:3%;
+        padding:4% 0px  0px;
+    }
+    #kontakt{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        p{
+            margin-top:20px;
+            width: 70%;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+    #forma{
+        width: 45%;
+    }
+    #drustvene{
+       width: 18%;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       font-size: 30px; 
+       ul{
+           display:flex;
+           flex-direction: column;
+           li{
+               margin-bottom:15px;
+               a{
+                    color:white;
+               }
+           }
+       }
+    }
+    .futer p{
+        margin-bottom:5px;
+    }
+    /* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:$redcolor;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+   /* float: left;*/
+    width: 65%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+}
